@@ -1,27 +1,37 @@
-
 header{
-background-color: black;
-color: white;
-text-align: center;
-}
-
-.MeteoVille{
-    background-color:gainsboro;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: center;
     }
-
-.flex-MeteoVille > div {
-    display: inline-flex;
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+    
+    
+    .MeteoVille {
+        background-color: gainsboro;
+        color: black;
+        text-align: center;
+        display: inline-flexbox;
+        flex-direction: column;
+        justify-content: center; /* Aligner horizontalement les éléments */
+        align-items: center;
+        margin-bottom: 20px; /* Ajouter de l'espace entre les div MeteoVille */
     }
-
-
-footer{
-    background-color: lightgrey;
-    color: black;
-    text-align: center;
+    
+    .temp, .description, .img {
+        margin: 0 10px; /* Ajouter de l'espace entre les éléments */
     }
+    
+    .flex-MeteoVille > div {
+        display: inline-flex;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        }
+    
+    
+    footer{
+        background-color: lightgrey;
+        color: black;
+        text-align: center;
+        }
