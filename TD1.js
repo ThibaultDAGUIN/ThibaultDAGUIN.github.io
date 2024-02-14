@@ -35,7 +35,7 @@ function fetchWeatherData() {
                 let villeElement = document.getElementById(villeId);
                 villeElement.querySelector(".temp").innerText = `${temperature}°C`;
                 villeElement.querySelector(".description").innerText = description;
-                villeElement.querySelector(".img").src = `http://openweathermap.org/img/wn/${iconCode}.png`;
+                villeElement.querySelector(".img").src = `http://openweathermap.org/img/w/${iconCode}.png`;
             })
             .catch(error => console.error(`Erreur lors de la récupération des données météorologiques pour ${ville} :`, error));
     });
