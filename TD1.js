@@ -83,7 +83,7 @@ function fetchWeatherData2() {
                 // Mettre à jour l'affichage sur la page pour la ville spécifique
                 document.getElementById(`${ville}-temp`).innerText = `${temperature}°C`;
                 document.getElementById(`${ville}-description`).innerText = description;
-                document.getElementById(`${ville}-img`).src = `http://openweathermap.org/img/wn/${iconCode}.png`;
+                document.getElementById(`${ville}-img`).src = `http://openweathermap.org/img/w/${iconCode}.png`;
             })
             .catch(error => console.error(`Erreur lors de la récupération des données météorologiques pour ${ville} :`, error));
     });
