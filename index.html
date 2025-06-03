@@ -36,7 +36,7 @@
                     <i class="bi-clipboard-data"></i> Thibault DAGUIN
                 </a>
 
-                <a href="./documents/CV TD - Data Analyst - BUT SD2.pdf" class="custom-btn btn btn-lg d-lg-none ms-auto me-4" target="_blank" >
+                <a href="./documents/CV - Responsable d'études statistiques - Thibault DAGUIN.pdf" class="custom-btn btn btn-lg d-lg-none ms-auto me-4" target="_blank" >
                     Mon CV
                     <i class="bi-download ms-2"></i>
                 </a>
@@ -145,7 +145,7 @@
                                         <div class="col-lg-5 col-12 m-auto" style="text-align: justify;">
                                             <h3 class="mb-3">Reconversion professionnelle</h3>
 
-                                            <p>Je m’appelle Thibault DAGUIN, je vis à la Rochelle, j’ai 35 ans et je suis en reconversion professionnelle pour devenir Data Analyst.</p>
+                                            <p>Je m’appelle Thibault DAGUIN, je vis à la Rochelle, j’ai 36 ans et je suis en reconversion professionnelle pour devenir Data Analyst.</p>
                                             <p>Dans une vie précédente j’étais responsable du pôle «solutions numériques» dans une agence de communication politique à la Rochelle, où j’encadrais une petite équipe de commerciaux et de développeurs depuis 7 ans.</p>
                                             <p>Je suis depuis toujours passionné par la donnée, j’ai décidé de franchir le cap et de me former pour être un acteur à part entière de ce domaine passionnant.</p>
                                             
@@ -218,96 +218,107 @@
 
 <section class="services section-padding" id="section_3">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-12">
-                <h2 class="mb-5">SAE de 2e année et autres exemples de projets</h2>
-            </div>
-            <div class="col-lg-4 col-12 ms-lg-auto mb-5 mb-lg-0">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-scraping-tab" data-bs-toggle="tab" data-bs-target="#nav-scraping" type="button" role="tab" aria-controls="nav-scraping" aria-selected="true">SAE 1</button>
-                        <button class="nav-link" id="nav-tempo-tab" data-bs-toggle="tab" data-bs-target="#nav-tempo" type="button" role="tab" aria-controls="nav-tempo" aria-selected="false">SAE 2</button>
-                        <button class="nav-link" id="nav-rgpd-tab" data-bs-toggle="tab" data-bs-target="#nav-rgpd" type="button" role="tab" aria-controls="nav-rgpd" aria-selected="false">SAE 3</button>
-                        <button class="nav-link" id="nav-shiny-tab" data-bs-toggle="tab" data-bs-target="#nav-shiny" type="button" role="tab" aria-controls="nav-shiny" aria-selected="false">SAE 4</button>
-                        <button class="nav-link" id="nav-qgis-tab" data-bs-toggle="tab" data-bs-target="#nav-qgis" type="button" role="tab" aria-controls="nav-qgis" aria-selected="false">Projet QGIS</button>
-                        <button class="nav-link" id="nav-d3js-tab" data-bs-toggle="tab" data-bs-target="#nav-d3js" type="button" role="tab" aria-controls="nav-d3js" aria-selected="false">Projet D3JS</button>
-                    </div>
-                </nav>
-            </div>
+        <!-- Toggle switch pour les projets -->
+        <div class="toggle-container">
+            <p id="toggle-projets-but2" class="toggle-title">BUT2</p>
+            <label class="toggle-switch">
+                <input type="checkbox" id="projetsToggle" checked>
+                <span class="toggle-slider"></span>
+            </label>
+            <p id="toggle-projets-but3" class="toggle-title active">BUT3</p>
+        </div>
 
-<!-- --------------------- SAE - Webscraping ------------------------------ -->
+        <!-- Contenu BUT2 -->
+        <div id="projets-content-but2" style="display:none;">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <h2 class="mb-5">SAE de 2e année et autres exemples de projets</h2>
+                </div>
+                <div class="col-lg-4 col-12 ms-lg-auto mb-5 mb-lg-0">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-scraping-tab" data-bs-toggle="tab" data-bs-target="#nav-scraping" type="button" role="tab" aria-controls="nav-scraping" aria-selected="true">SAE 1</button>
+                            <button class="nav-link" id="nav-tempo-tab" data-bs-toggle="tab" data-bs-target="#nav-tempo" type="button" role="tab" aria-controls="nav-tempo" aria-selected="false">SAE 2</button>
+                            <button class="nav-link" id="nav-rgpd-tab" data-bs-toggle="tab" data-bs-target="#nav-rgpd" type="button" role="tab" aria-controls="nav-rgpd" aria-selected="false">SAE 3</button>
+                            <button class="nav-link" id="nav-shiny-tab" data-bs-toggle="tab" data-bs-target="#nav-shiny" type="button" role="tab" aria-controls="nav-shiny" aria-selected="false">SAE 4</button>
+                            <button class="nav-link" id="nav-qgis-tab" data-bs-toggle="tab" data-bs-target="#nav-qgis" type="button" role="tab" aria-controls="nav-qgis" aria-selected="false">Projet Carto-QGIS</button>
+                            <button class="nav-link" id="nav-d3js-tab" data-bs-toggle="tab" data-bs-target="#nav-d3js" type="button" role="tab" aria-controls="nav-d3js" aria-selected="false">Projet JS-D3JS</button>
+                        </div>
+                    </nav>
+                </div>
 
-            <div class="col-12">
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-scraping" role="tabpanel" aria-labelledby="nav-scraping-tab">
-                        <div class="row">
-                            <div class="col-lg-6 col-12 mb-lg-0 mb-4">
-                                <img src="images/webscraping.png" class="img-fluid img-hover-animation" alt="">
-                            </div>
-                            <div class="col-lg-5 col-12 m-auto">
-                                <h3 class="mb-3">Collecte de données web</h3>
-                                <div class="accordion" id="accordionGeneral1">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne1" aria-expanded="true" aria-controls="accordionGeneralOne1">
-                                                Quels objectifs ?
-                                            </button>
-                                        </h2>
-                                        <div id="accordionGeneralOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="#accordionGeneral1">
-                                            <div class="accordion-body">
-                                                <p class="large-paragraph">Cette SAE à pour objectif de nous initier aux concepts de <strong>WebScraping et d'API</strong>.
-                                                    L’idée est de pouvoir collecter en ligne une information afin de permettre une réutilisation.</p>
-                                                <p class="large-paragraph">Pour ce module nous avons travaillé en binôme à extraire des données de 
-                                                    <a href="https://fr.wikipedia.org/wiki/Liste_des_a%C3%A9roports_les_plus_fr%C3%A9quent%C3%A9s_en_France" target="_blank">
-                                                        <strong>la page Wikipedia des aéroports les plus fréquentés en France</strong>
-                                                    </a>
-                                                    afin d’y extraire des données et de les exploiter. 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo1" aria-expanded="false" aria-controls="accordionGeneralTwo1">
-                                                Quelles technologies utilisées?
-                                            </button>
-                                        </h2>
-                                        <div id="accordionGeneralTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionGeneral1">
-                                            <div class="accordion-body">
-                                                <p class="large-paragraph">Pour ce projet nous avons travaillé avec le langage de programmation <strong>Python</strong> et avec la librairie dédiée au webscraping <strong>« BeautifulSoup »</strong>. 
-                                                    Nous avons également eu besoin de <strong>Leaflet</strong> pour générer la carte ainsi que des langages <strong>HTML et CSS</strong> pour la mise en forme du rapport.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree1" aria-expanded="false" aria-controls="accordionGeneralThree1">
-                                                Quels apports?
-                                            </button>
-                                        </h2>
-                                        <div id="accordionGeneralThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionGeneral1">
-                                            <div class="accordion-body">
-                                                <p class="large-paragraph">Ce projet m’a tout d’abord permis de mesurer qu’il était possible de « scraper » un site web. 
-                                                    Cet exercice nécessite ensuite de se familiariser avec le contenu du code source HTML et de le comprendre pour pouvoir extraire 
-                                                    les informations souhaitées. <br><br>
-                                                    Par ailleurs, c’est une excellente introduction au concept de l’API qui permet d’accéder à une donnée plus facilement 
-                                                    et en respectant le cadre du RGPD.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of accordion -->
-                                <div>
-                                    <p></p>
-                                    <a 
-                                    class="custom-btn custom-bg-dark btn" 
-                                    href="./documents/SAE-Collecte_PORCHER_DAGUIN_SD2.py" 
-                                    target="_blank">
-                                    Télécharger le code Python du projet <i class="bi-download ms-2"></i>
-                                    </a>
+                <!-- --------------------- SAE - Webscraping ------------------------------ -->
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-scraping" role="tabpanel" aria-labelledby="nav-scraping-tab">
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                                    <img src="images/webscraping.png" class="img-fluid img-hover-animation" alt="">
                                 </div>
-                            </div> <!-- end of col-lg-5 -->
-                        </div> <!-- end of row -->
-                    </div> <!-- end of tab-pane -->
+                                <div class="col-lg-5 col-12 m-auto">
+                                    <h3 class="mb-3">Collecte de données web</h3>
+                                    <div class="accordion" id="accordionGeneral1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne1" aria-expanded="true" aria-controls="accordionGeneralOne1">
+                                                    Quels objectifs ?
+                                                </button>
+                                            </h2>
+                                            <div id="accordionGeneralOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="#accordionGeneral1">
+                                                <div class="accordion-body">
+                                                    <p class="large-paragraph">Cette SAE à pour objectif de nous initier aux concepts de <strong>WebScraping et d'API</strong>.
+                                                        L'idée est de pouvoir collecter en ligne une information afin de permettre une réutilisation.</p>
+                                                    <p class="large-paragraph">Pour ce module nous avons travaillé en binôme à extraire des données de 
+                                                        <a href="https://fr.wikipedia.org/wiki/Liste_des_a%C3%A9roports_les_plus_fr%C3%A9quent%C3%A9s_en_France" target="_blank">
+                                                            <strong>la page Wikipedia des aéroports les plus fréquentés en France</strong>
+                                                        </a>
+                                                        afin d'y extraire des données et de les exploiter. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo1" aria-expanded="false" aria-controls="accordionGeneralTwo1">
+                                                    Quelles technologies utilisées?
+                                                </button>
+                                            </h2>
+                                            <div id="accordionGeneralTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionGeneral1">
+                                                <div class="accordion-body">
+                                                    <p class="large-paragraph">Pour ce projet nous avons travaillé avec le langage de programmation <strong>Python</strong> et avec la librairie dédiée au webscraping <strong>« BeautifulSoup »</strong>. 
+                                                        Nous avons également eu besoin de <strong>Leaflet</strong> pour générer la carte ainsi que des langages <strong>HTML et CSS</strong> pour la mise en forme du rapport.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree1" aria-expanded="false" aria-controls="accordionGeneralThree1">
+                                                    Quels apports?
+                                                </button>
+                                            </h2>
+                                            <div id="accordionGeneralThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionGeneral1">
+                                                <div class="accordion-body">
+                                                    <p class="large-paragraph">Ce projet m'a tout d'abord permis de mesurer qu'il était possible de « scraper » un site web. 
+                                                        Cet exercice nécessite ensuite de se familiariser avec le contenu du code source HTML et de le comprendre pour pouvoir extraire 
+                                                        les informations souhaitées. <br><br>
+                                                        Par ailleurs, c'est une excellente introduction au concept de l'API qui permet d'accéder à une donnée plus facilement 
+                                                        et en respectant le cadre du RGPD.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of accordion -->
+                                    <div>
+                                        <p></p>
+                                        <a 
+                                        class="custom-btn custom-bg-dark btn" 
+                                        href="./documents/SAE-Collecte_PORCHER_DAGUIN_SD2.zip" 
+                                        target="_blank">
+                                        Télécharger le code Python du projet <i class="bi-download ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- end of col-lg-5 -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
 
 <!-- --------------------- SAE - Série tempo ------------------------------ -->
 
@@ -682,80 +693,582 @@
                 target="_blank">
                 Télécharger code source du projet <i class="bi-download ms-2"></i>
                 </a>
-            </div>
-        </div> <!-- end of col-lg-5 -->
+                                    </div>
+                                </div> <!-- end of col-lg-5 -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        
+                        <!-- Ajoutez ici les autres onglets de votre contenu BUT2 (Series Tempo, RGPD, etc.) -->
+                        
+                    </div> <!-- end of tab-content -->
+                </div> <!-- end of col-12 -->
+            </div> <!-- end of row -->
+        </div> <!-- end of projets-content-but2 -->
+
+<!-------------------------------------------------------------------------------------------------->
+<!---------------------------------------- SAE BUT3 ------------------------------------------------>
+<!-------------------------------------------------------------------------------------------------->
+
+<div id="projets-content-but3">
+    <div class="row">
+        <div class="col-lg-6 col-12">
+            <h2 class="mb-5">SAE de 3e année et autres exemples de projets</h2>
+        </div>
+        <div class="col-lg-4 col-12 ms-lg-auto mb-5 mb-lg-0">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab-but3" role="tablist">
+                    <button class="nav-link active" id="nav-sae1-but3-tab" data-bs-toggle="tab" data-bs-target="#nav-sae1-but3" type="button" role="tab" aria-controls="nav-sae1-but3" aria-selected="true">SAE 1</button>
+                    <button class="nav-link" id="nav-sae2-but3-tab" data-bs-toggle="tab" data-bs-target="#nav-sae2-but3" type="button" role="tab" aria-controls="nav-sae2-but3" aria-selected="false">SAE 2</button>
+                    <button class="nav-link" id="nav-sae3-but3-tab" data-bs-toggle="tab" data-bs-target="#nav-sae3-but3" type="button" role="tab" aria-controls="nav-sae3-but3" aria-selected="false">SAE 3</button>
+                    <button class="nav-link" id="nav-sae4-but3-tab" data-bs-toggle="tab" data-bs-target="#nav-sae4-but3" type="button" role="tab" aria-controls="nav-sae4-but3" aria-selected="false">SAE 4</button>
+                    <button class="nav-link" id="nav-projet1-but3-tab" data-bs-toggle="tab" data-bs-target="#nav-projet1-but3" type="button" role="tab" aria-controls="nav-projet1-but3" aria-selected="false">Projet GitHub-ReactJS</button>
+                    <button class="nav-link" id="nav-projet2-but3-tab" data-bs-toggle="tab" data-bs-target="#nav-projet2-but3" type="button" role="tab" aria-controls="nav-projet2-but3" aria-selected="false">Projet Python-Dash</button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col-12">
+            <div class="tab-content" id="nav-tabContent-but3">
+                <!-- SAE 1 - BUT3 -->
+                <div class="tab-pane fade show active" id="nav-sae1-but3" role="tabpanel" aria-labelledby="nav-sae1-but3-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                            <img src="images/mongodb_code.png" class="img-fluid img-hover-animation" alt="">
+                        </div>
+                        <div class="col-lg-5 col-12 m-auto">
+                            <h3 class="mb-3">Migration de données vers un environnement NoSQL</h3>
+                            <div class="accordion" id="accordionGeneral1-but3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne1-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne1-but3" aria-expanded="true" aria-controls="accordionGeneralOne1-but3">
+                                            Quels objectifs ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralOne1-but3" class="accordion-collapse collapse" aria-labelledby="headingOne1-but3" data-bs-parent="#accordionGeneral1-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Cette SAE avait pour objectif de nous familiariser avec la migration d'une base de données relationnelle vers un environnement NoSQL, en l'occurrence MongoDB. Il s'agissait de repenser l'organisation des données en adoptant un modèle orienté document, tout en assurant la cohérence et la pertinence des informations migrées.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo1-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo1-but3" aria-expanded="false" aria-controls="accordionGeneralTwo1-but3">
+                                            Quelles technologies utilisées?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralTwo1-but3" class="accordion-collapse collapse" aria-labelledby="headingTwo1-but3" data-bs-parent="#accordionGeneral1-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Pour ce projet, j'ai utilisé le langage <strong>Python</strong> avec la librairie <strong>pymongo</strong> pour interagir avec MongoDB. J'ai également mobilisé mes connaissances en <strong>SQL</strong> pour comprendre la structure initiale de la base relationnelle et faciliter la transition vers le modèle NoSQL.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree1-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree1-but3" aria-expanded="false" aria-controls="accordionGeneralThree1-but3">
+                                            Quels apports?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralThree1-but3" class="accordion-collapse collapse" aria-labelledby="headingThree1-but3" data-bs-parent="#accordionGeneral1-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Ce projet m'a permis de consolider mes compétences en Python, notamment à travers l'utilisation des dictionnaires et des compréhensions. Il m'a également offert une révision approfondie du modèle relationnel et du langage SQL, en particulier sur le typage des données. Enfin, j'ai appris à formuler des requêtes dans MongoDB et à comprendre les enjeux techniques et conceptuels d'une migration vers un environnement NoSQL.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of accordion -->
+                            <div>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/SAE MongoDB - Thibault DAGUIN.zip" 
+                                target="_blank">
+                                Télécharger le projet <i class="bi-download ms-2"></i>
+                                </a>
+                            </div>
+                        </div> <!-- end of col-lg-5 -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of tab-pane -->
+                
+                <!-- SAE 2 - BUT3 -->
+                <div class="tab-pane fade" id="nav-sae2-but3" role="tabpanel" aria-labelledby="nav-sae2-but3-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                            <img src="images/expressJS.jpg" class="img-fluid img-hover-animation" alt="">
+                        </div>
+                        <div class="col-lg-5 col-12 m-auto">
+                            <h3 class="mb-3">Refonte d'une application en ExpressJS</h3>
+                            <div class="accordion" id="accordionGeneral2-but3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne2-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne2-but3" aria-expanded="true" aria-controls="accordionGeneralOne2-but3">
+                                            Quels objectifs ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralOne2-but3" class="accordion-collapse collapse" aria-labelledby="headingOne2-but3" data-bs-parent="#accordionGeneral2-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">L'objectif principal de cette SAE était d'analyser et de corriger les indicateurs existants dans une base de données, puis d'améliorer l'expérience utilisateur à travers une refonte de l'application. Nous avons également développé un simulateur de rentabilité pour enrichir les fonctionnalités proposées.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo2-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo2-but3" aria-expanded="false" aria-controls="accordionGeneralTwo2-but3">
+                                            Quelles technologies utilisées?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralTwo2-but3" class="accordion-collapse collapse" aria-labelledby="headingTwo2-but3" data-bs-parent="#accordionGeneral2-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Nous avons travaillé avec <strong>Docker</strong> pour la conteneurisation, une base de données <strong>MariaDB</strong> pour le stockage des données, le langage <strong>SQL</strong> pour les requêtes, et le framework <strong>ExpressJS</strong> pour le développement.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree2-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree2-but3" aria-expanded="false" aria-controls="accordionGeneralThree2-but3">
+                                            Quels apports?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralThree2-but3" class="accordion-collapse collapse" aria-labelledby="headingThree2-but3" data-bs-parent="#accordionGeneral2-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Ce projet m'a permis de travailler en équipe de manière collaborative via Git, en mettant en place une bonne segmentation des tâches. J'ai également approfondi ma compréhension du fonctionnement d'ExpressJS et de son intégration dans un projet web complet. Ce fut une expérience enrichissante en termes de gestion de projet et de développement back-end.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of accordion -->
+
+                            <div>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="https://github.com/Lea49150/mydental-bi" 
+                                target="_blank">
+                                Voir le projet sur GitHub <i class="bi bi-github"></i>
+                                </a>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/mydental-bi.zip" 
+                                target="_blank">
+                                Télécharger le projet <i class="bi-download ms-2"></i>
+                                </a>
+                            </div>
+                        </div> <!-- end of col-lg-5 -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of tab-pane -->
+                
+                <!-- SAE 3 - BUT3 -->
+                <div class="tab-pane fade" id="nav-sae3-but3" role="tabpanel" aria-labelledby="nav-sae3-but3-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                            <img src="images/Qlik.png" class="img-fluid img-hover-animation" alt="">
+                        </div>
+                        <div class="col-lg-5 col-12 m-auto">
+                            <h3 class="mb-3">Réaliser une analyse visuelle avec QlikSense</h3>
+                            <div class="accordion" id="accordionGeneral3-but3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne3-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne3-but3" aria-expanded="true" aria-controls="accordionGeneralOne3-but3">
+                                            Quels objectifs ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralOne3-but3" class="accordion-collapse collapse" aria-labelledby="headingOne3-but3" data-bs-parent="#accordionGeneral3-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">L'objectif de cette activité était d'apprendre à importer, croiser et interpréter des données multiples afin de produire une analyse visuelle claire, cohérente et pertinente à l'aide de l'outil QlikSense.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo3-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo3-but3" aria-expanded="false" aria-controls="accordionGeneralTwo3-but3">
+                                            Quelles technologies utilisées ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralTwo3-but3" class="accordion-collapse collapse" aria-labelledby="headingTwo3-but3" data-bs-parent="#accordionGeneral3-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Nous avons utilisé exclusivement <strong>QlikSense</strong> pour ce projet, un outil puissant de data visualisation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree3-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree3-but3" aria-expanded="false" aria-controls="accordionGeneralThree3-but3">
+                                            Quels apports ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralThree3-but3" class="accordion-collapse collapse" aria-labelledby="headingThree3-but3" data-bs-parent="#accordionGeneral3-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Au-delà de l'apprentissage technique de QlikSense, ce projet m'a permis de mieux comprendre les enjeux de la dataviz et de comparer les différents outils du marché (Tableau, PowerBI, BO, Kibana…). Il m'a également appris à structurer une analyse visuelle de manière à la rendre accessible et impactante pour un public non technique.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of accordion -->
+                            <div>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/Backup Visuel - Projet Qlik Thibault DAGUIN.pdf" 
+                                target="_blank">
+                                Voir le livrable <i class="bi-eye"></i>
+                                </a>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/projet Qlik - DAGUIN.zip" 
+                                target="_blank">
+                                Télécharger le fichier Qlik <i class="bi-download ms-2"></i>
+                                </a>
+                            </div>
+                        </div> <!-- end of col-lg-5 -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of tab-pane -->
+                
+                <!-- SAE 4 - BUT3 -->
+                <div class="tab-pane fade" id="nav-sae4-but3" role="tabpanel" aria-labelledby="nav-sae4-but3-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                            <img src="images/llm.png" class="img-fluid img-hover-animation" alt="">
+                        </div>
+                        <div class="col-lg-5 col-12 m-auto">
+                            <h3 class="mb-3">Réaliser un Chatbot LLM RAG</h3>
+                            <div class="accordion" id="accordionGeneral4-but3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne4-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne4-but3" aria-expanded="true" aria-controls="accordionGeneralOne4-but3">
+                                            Quels objectifs ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralOne4-but3" class="accordion-collapse collapse" aria-labelledby="headingOne4-but3" data-bs-parent="#accordionGeneral4-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">L'objectif de ce projet était de concevoir un chatbot intelligent capable de répondre à des questions précises à partir de documents textuels (ici, des contrats d'assurance). En s'appuyant sur une architecture RAG (Retrieval-Augmented Generation), le chatbot devait permettre une récupération rapide et pertinente de l'information.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo4-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo4-but3" aria-expanded="false" aria-controls="accordionGeneralTwo4-but3">
+                                            Quelles technologies utilisées?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralTwo4-but3" class="accordion-collapse collapse" aria-labelledby="headingTwo4-but3" data-bs-parent="#accordionGeneral4-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Pour ce projet, j'ai utilisé <strong>Python</strong> avec <strong>Streamlit</strong> pour l'interface, <strong>BeautifulSoup</strong> pour le traitement des documents HTML, <strong>ChromaDB</strong> pour la base vectorielle, ainsi que des embeddings issus de <strong>HuggingFace</strong>. Le modèle de langage utilisé était <strong>Gemini Pro</strong> via Google AI Studio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree4-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree4-but3" aria-expanded="false" aria-controls="accordionGeneralThree4-but3">
+                                            Quels apports?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralThree4-but3" class="accordion-collapse collapse" aria-labelledby="headingThree4-but3" data-bs-parent="#accordionGeneral4-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Ce projet m'a permis de comprendre concrètement le fonctionnement d'un chatbot de type LLM, en particulier les mécanismes de la génération augmentée par récupération (RAG). J'ai pu expérimenter toutes les étapes : vectorisation des documents, recherche sémantique, et génération de réponses. Ce fut une excellente introduction aux LLMs appliqués, et cela m'a montré que la création d'un assistant intelligent sur des documents métiers est aujourd'hui techniquement accessible.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of accordion -->
+                            <div>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/Projet LLM - BARBEY + ROSSIGNOL + DAGUIN - BUT SD3.pdf" 
+                                target="_blank">
+                                Voir la documentation <i class="bi-eye"></i>
+                                </a>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/Projet LLM - BARBEY + ROSSIGNOL + DAGUIN - BUT SD3.zip" 
+                                target="_blank">
+                                Télécharger le projet <i class="bi-download ms-2"></i>
+                                </a>
+                            </div>
+                        </div> <!-- end of col-lg-5 -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of tab-pane -->
+                
+                <!-- Projet 1 - BUT3 -->
+                <div class="tab-pane fade" id="nav-projet1-but3" role="tabpanel" aria-labelledby="nav-projet1-but3-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                            <img src="images/marvel_app.png" class="img-fluid img-hover-animation" alt="">
+                        </div>
+                        <div class="col-lg-5 col-12 m-auto">
+                            <h3 class="mb-3">Développer, mettre à jour et maintenir une application web</h3>
+                            <div class="accordion" id="accordionGeneral5-but3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne5-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne5-but3" aria-expanded="true" aria-controls="accordionGeneralOne5-but3">
+                                            Quels objectifs ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralOne5-but3" class="accordion-collapse collapse" aria-labelledby="headingOne5-but3" data-bs-parent="#accordionGeneral5-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Ce projet avait pour but de développer un site web complet (back+front) sur l'univers Marvel, incluant l'appel à des données via API, la mise en place d'un système de versioning avec GitHub, la réalisation de tests fonctionnels, ainsi que la gestion de la migration entre différentes versions de l'application.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo5-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo5-but3" aria-expanded="false" aria-controls="accordionGeneralTwo5-but3">
+                                            Quelles technologies utilisées ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralTwo5-but3" class="accordion-collapse collapse" aria-labelledby="headingTwo5-but3" data-bs-parent="#accordionGeneral5-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">J'ai utilisé <strong>Visual Studio Code</strong> comme environnement de développement, ainsi que les langages <strong>HTML, CSS et JavaScript</strong> pour la structure et l'interactivité du site. Le framework <strong>ReactJS</strong> a été utilisé pour le développement de l'interface, et des appels API ont permis d'intégrer des données dynamiques.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree5-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree5-but3" aria-expanded="false" aria-controls="accordionGeneralThree5-but3">
+                                            Quels apports ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralThree5-but3" class="accordion-collapse collapse" aria-labelledby="headingThree5-but3" data-bs-parent="#accordionGeneral5-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Ce projet m'a permis d'apprendre à utiliser GitHub de manière collaborative, en gérant efficacement les versions du code et les contributions multiples. Il m'a également permis de consolider mes connaissances en HTML, CSS et JavaScript, tout en découvrant le développement avec ReactJS. Cette expérience m'a été particulièrement utile, car j'ai pu réutiliser ces compétences dans d'autres projets académiques et professionnels, y compris pour le développement de ce site web !</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of accordion -->
+                            <div>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="https://github.com/ThibaultDAGUIN/marvel-app" 
+                                target="_blank">
+                                Voir le projet sur GitHub <i class="bi bi-github"></i>
+
+                                <!-- <i class="bi-download ms-2"></i> -->
+                                </a>
+                            </div>
+                        </div> <!-- end of col-lg-5 -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of tab-pane -->
+                
+                <!-- Projet 2 - BUT3 -->
+                <div class="tab-pane fade" id="nav-projet2-but3" role="tabpanel" aria-labelledby="nav-projet2-but3-tab">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                            <img src="images/dash3.png" class="img-fluid img-hover-animation" alt="">
+                        </div>
+                        <div class="col-lg-5 col-12 m-auto">
+                            <h3 class="mb-3">Application d'annotation d'images avec Dash</h3>
+                            <div class="accordion" id="accordionGeneral6-but3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne6-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne6-but3" aria-expanded="true" aria-controls="accordionGeneralOne6-but3">
+                                            Quels objectifs ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralOne6-but3" class="accordion-collapse collapse" aria-labelledby="headingOne6-but3" data-bs-parent="#accordionGeneral6-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">L'objectif de ce projet était de développer une application web interactive permettant d'annoter précisément la position d'une voiture sur une base d'images. L'interface devait être intuitive et permettre une annotation rapide et fiable, dans un contexte proche de cas d'usage réels en vision par ordinateur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo6-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo6-but3" aria-expanded="false" aria-controls="accordionGeneralTwo6-but3">
+                                            Quelles technologies utilisées ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralTwo6-but3" class="accordion-collapse collapse" aria-labelledby="headingTwo6-but3" data-bs-parent="#accordionGeneral6-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Le projet a été réalisé en <strong>Python</strong> avec le framework <strong>Dash</strong> pour la création de l'application web. <strong>Bootstrap</strong> a été utilisé pour la mise en forme de l'interface, et <strong>GitHub</strong> a servi de plateforme de versioning et de collaboration.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree6-but3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree6-but3" aria-expanded="false" aria-controls="accordionGeneralThree6-but3">
+                                            Quels apports ?
+                                        </button>
+                                    </h2>
+                                    <div id="accordionGeneralThree6-but3" class="accordion-collapse collapse" aria-labelledby="headingThree6-but3" data-bs-parent="#accordionGeneral6-but3">
+                                        <div class="accordion-body">
+                                            <p class="large-paragraph">Ce projet m'a permis de découvrir le potentiel de Dash pour créer des interfaces web interactives en Python, notamment dans le cadre d'applications de visualisation et d'annotation. Il m'a également permis de mieux comprendre les enjeux liés à l'annotation de données visuelles. En fin de module, j'ai également exploré Streamlit, un autre framework Python plus simple à prendre en main, que j'ai depuis utilisé dans plusieurs projets académiques et professionnels.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of accordion -->
+                            <div>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/Présentation Dash McQueen.pdf" 
+                                target="_blank">
+                                Voir la présentation <i class="bi-eye"></i>
+                                </a>
+                                <p></p>
+                                <a 
+                                class="custom-btn custom-bg-dark btn" 
+                                href="./documents/Projet Dash + Note technique - MARTIN_CHAINE_DAGUIN_BONNAUD-DUBOIS.zip" 
+                                target="_blank">
+                                Télécharger le projet <i class="bi-download ms-2"></i>
+                                </a>
+                            </div>
+                        </div> <!-- end of col-lg-5 -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of tab-pane -->
+                
+            </div> <!-- end of tab-content -->
+        </div> <!-- end of col-12 -->
     </div> <!-- end of row -->
-</div> <!-- end of tab-pane -->
-
-
-
-
-
-                </div> <!-- end of tab-content -->
-            </div> <!-- end of col-12 -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
+</div> <!-- end of projets-content-but3 -->
+</div> <!-- end of container -->
 </section>
-
 
 <!-- ----------------------------------------------------------------------------------- -->
 <!-- -------------------------------  Bilan -------------------------------------------- -->
 <!-- ----------------------------------------------------------------------------------- -->
 
+<!-- le contenu du bilan BUT2: -->
+<section id="section_4" class="section-padding">
 
-            <section class="work section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="mb-5 text-center">Bilan Personnel de l'année 2023-2024</h2>
-                        </div>
-                        <div class="col-12" style="text-align: justify;">
-                            <p>Je ne pense pas qu’il soit excessif de dire que cette année scolaire 2023-2024 est un véritable bouleversement dans ma vie. </p>
-                            <p>J’ai 35 ans et moins de six mois avant la rentrée scolaire, j’étais responsable du pôle « solutions numériques » dans une agence de communication politique à la Rochelle, où j’encadrais une petite équipe de commerciaux et de développeurs depuis 7 ans. J’étais plutôt épanoui, j’exerçais des responsabilités et j’étais reconnu pour mes compétences professionnelles. Ces dernières années j’ai particulièrement apprécié travailler à l’élaboration et à l’amélioration d’un outil d’analyse statistique de l’électorat.</p>
-                            <p>Malheureusement, l’entreprise a connu de graves difficultés financières, qui n’étaient pas liées à mon activité, et l’a conduit vers une liquidation judiciaire. Je me suis retrouvé sans emploi et je ne voulais pas me résoudre à prendre une nouvelle fois un emploi de technico-commercial par défaut en espérant un jour évoluer et impulser des projets d’analyse statistique pour enfin trouver du sens dans mon travail.</p>
-                            <p>Mon histoire est celle d’une reconversion professionnelle choisie. Je ne renie pas ma précédente formation en commerce international, qui m’a beaucoup apporté sur un plan social et linguistique, mais elle ne me suffit plus. J’ai toujours eu une passion pour les technologies, une admiration pour les développeurs et une fascination pour l’exploitation des données, à commencer par les données libres (les fameuses « open data »). C’est ce qui m’a poussé à rejoindre le BUT Sciences des Données de Niort. J’ai fait la demande d’entrer directement en 2ème année, en m’engageant à rattraper mon retard, pour que cela soit compatible avec une alternance chez Covéa en parallèle.</p>
-                            <p>Avant d’étudier au BUT SD, mes compétences informatiques se limitent à une culture générale du web, à une utilisation intensive d’Excel et aux rudiments du langage HTML. C’est vraiment une compétence que je suis venu chercher dans cette formation et c’est aussi ce qui m’a motivé à prendre la spécialité « Visualisation et conception d’outils décisionnels » (VCOD) qui consacre un temps de formation supplémentaire à la programmation et à la maîtrise d’outils informatiques.</p>
-                            <p>La formation du BUT SD est très complète, elle intègre 3 types de compétences : les compétences informatiques, les compétences mathématiques et les compétences transverses. Ces dernières m’ont semblé plus familières au vu de mon parcours. Je ne peux pas en dire autant de l’enseignement mathématique, mes derniers cours de mathématiques remontaient à la terminale scientifique et cette compétence représente encore aujourd’hui un défi important à relever.</p>
-                            <p>De manière pratique, je vais revenir sur les objectifs et ce dont j’ai personnellement retiré de ces 3 blocs.</p>
-                            <p></p>
-                            <h5 class="text-center">Objectifs et compétences acquises cette année</h4>
-                            <p></p>
-                            <p>En <strong>informatique</strong>, l’objectif est de nous former sur des technologies qui nous aident à prendre en charge l’intégralité du cycle de traitement de la donnée.</p>
-                            <p>Grâce aux enseignements informatiques de cette année je suis en mesure de : <br>
-                                <i class="bi bi-arrow-right-square-fill"></i>	Constituer une base de données et un environnement de travail (<strong>SQL, Talend, Docker</strong>) <br>
-                                <i class="bi bi-arrow-right-square-fill"></i>	Créer des traitements informatiques sur les données (<strong>Talend, Python, R, SAS, PHP</strong>) <br>
-                                <i class="bi bi-arrow-right-square-fill"></i>
-                            	Valoriser les résultats de manière esthétique et synthétique (<strong>Tableau, BO, R Shiny, JavaScript</strong>) <br>
+    <!-- Toggle switch -->
+    <div class="container">
+        <div class="toggle-container">
+            <p id="toggle-but2" class="toggle-title">BUT2</p>
+            <label class="toggle-switch">
+                <input type="checkbox" id="bilanToggle" checked>
+                <span class="toggle-slider"></span>
+            </label>
+            <p id="toggle-but3" class="toggle-title active">BUT3</p>
+        </div>
+    </div>
 
-                            </p>
+    <div id="bilan-title-but2" style="display:none;">
+        <h2 class="mb-5 text-center">Bilan Personnel de l'année 2023-2024</h2>
+    </div>
+    <div id="bilan-title-but3">
+        <h2 class="mb-5 text-center">Bilan Personnel de l'année 2024-2025</h2>
+    </div>
+    
+    <div id="bilan-content-but2" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="text-align: justify;">
+                    <p>Je ne pense pas qu'il soit excessif de dire que cette année scolaire 2023-2024 est un véritable bouleversement dans ma vie. </p>
+                    <p>J'ai 35 ans et moins de six mois avant la rentrée scolaire, j'étais responsable du pôle « solutions numériques » dans une agence de communication politique à la Rochelle, où j'encadrais une petite équipe de commerciaux et de développeurs depuis 7 ans. J'étais plutôt épanoui, j'exerçais des responsabilités et j'étais reconnu pour mes compétences professionnelles. Ces dernières années j'ai particulièrement apprécié travailler à l'élaboration et à l'amélioration d'un outil d'analyse statistique de l'électorat.</p>
+                    <p>Malheureusement, l'entreprise a connu de graves difficultés financières, qui n'étaient pas liées à mon activité, et l'a conduit vers une liquidation judiciaire. Je me suis retrouvé sans emploi et je ne voulais pas me résoudre à prendre une nouvelle fois un emploi de technico-commercial par défaut en espérant un jour évoluer et impulser des projets d'analyse statistique pour enfin trouver du sens dans mon travail.</p>
+                    <p>Mon histoire est celle d'une reconversion professionnelle choisie. Je ne renie pas ma précédente formation en commerce international, qui m'a beaucoup apporté sur un plan social et linguistique, mais elle ne me suffit plus. J'ai toujours eu une passion pour les technologies, une admiration pour les développeurs et une fascination pour l'exploitation des données, à commencer par les données libres (les fameuses « open data »). C'est ce qui m'a poussé à rejoindre le BUT Sciences des Données de Niort. J'ai fait la demande d'entrer directement en 2ème année, en m'engageant à rattraper mon retard, pour que cela soit compatible avec une alternance chez Covéa en parallèle.</p>
+                    <p>Avant d'étudier au BUT SD, mes compétences informatiques se limitent à une culture générale du web, à une utilisation intensive d'Excel et aux rudiments du langage HTML. C'est vraiment une compétence que je suis venu chercher dans cette formation et c'est aussi ce qui m'a motivé à prendre la spécialité « Visualisation et conception d'outils décisionnels » (VCOD) qui consacre un temps de formation supplémentaire à la programmation et à la maîtrise d'outils informatiques.</p>
+                    <p>La formation du BUT SD est très complète, elle intègre 3 types de compétences : les compétences informatiques, les compétences mathématiques et les compétences transverses. Ces dernières m'ont semblé plus familières au vu de mon parcours. Je ne peux pas en dire autant de l'enseignement mathématique, mes derniers cours de mathématiques remontaient à la terminale scientifique et cette compétence représente encore aujourd'hui un défi important à relever.</p>
+                    <p>De manière pratique, je vais revenir sur les objectifs et ce dont j'ai personnellement retiré de ces 3 blocs.</p>
+                    <p></p>
+                    <h5 class="text-center">Objectifs et compétences acquises cette année</h4>
+                    <p></p>
+                    <p>En <strong>informatique</strong>, l'objectif est de nous former sur des technologies qui nous aident à prendre en charge l'intégralité du cycle de traitement de la donnée.</p>
+                    <p>Grâce aux enseignements informatiques de cette année je suis en mesure de : <br>
+                        <i class="bi bi-arrow-right-square-fill"></i>	Constituer une base de données et un environnement de travail (<strong>SQL, Talend, Docker</strong>) <br>
+                        <i class="bi bi-arrow-right-square-fill"></i>	Créer des traitements informatiques sur les données (<strong>Talend, Python, R, SAS, PHP</strong>) <br>
+                        <i class="bi bi-arrow-right-square-fill"></i>
+                        Valoriser les résultats de manière esthétique et synthétique (<strong>Tableau, BO, R Shiny, JavaScript</strong>) <br>
 
-                            <p>En <strong>mathématiques</strong>, l’objectif est d’acquérir les bases mathématiques pour envisager toutes les possibilités d’analyse qui s’offrent à nous. Cela nous aide aussi à construire un raisonnement structuré. </p>
-                                <p>Grâce aux enseignements informatiques de cette année je suis en mesure de : <br>
-                                    <i class="bi bi-arrow-right-square-fill"></i>	Comprendre les mécanismes mathématiques derrière les modèles statistiques informatisés (<strong>Régressions, ACP, KMEANS, CAH</strong>)<br>
-                                    <i class="bi bi-arrow-right-square-fill"></i>	Construire des prévisions grâce aux séries temporelles <br>
-                                    <i class="bi bi-arrow-right-square-fill"></i>	Tester la validité d’un modèle <br>
+                    </p>
 
-                                </p>
+                    <p>En <strong>mathématiques</strong>, l'objectif est d'acquérir les bases mathématiques pour envisager toutes les possibilités d'analyse qui s'offrent à nous. Cela nous aide aussi à construire un raisonnement structuré. </p>
+                        <p>Grâce aux enseignements mathématiques de cette année je suis en mesure de : <br>
+                            <i class="bi bi-arrow-right-square-fill"></i>	Comprendre les mécanismes mathématiques derrière les modèles statistiques informatisés (<strong>Régressions, ACP, KMEANS, CAH</strong>)<br>
+                            <i class="bi bi-arrow-right-square-fill"></i>	Construire des prévisions grâce aux séries temporelles <br>
+                            <i class="bi bi-arrow-right-square-fill"></i>	Tester la validité d'un modèle <br>
 
-                            <p>Dans les <strong>enseignements transverses</strong>, l’objectif est de nous transmettre des clés supplémentaires qui nous seront utiles dans notre parcours professionnel. </p>
-                              <p>  Grâce aux enseignements transverses de cette année je suis en mesure de : <br>
-                                <i class="bi bi-arrow-right-square-fill"></i>	Mieux m’exprimer à l’oral et à l’écrit, en français et en anglais <br>
-                                <i class="bi bi-arrow-right-square-fill"></i>	Mieux comprendre les données économiques et sociales <br>
-                                <i class="bi bi-arrow-right-square-fill"></i>	Construire un outil sans contrevenir au cadre réglementaire du RGPD <br>
-                                </p>
-                            <p></p>
+                        </p>
 
-                            
-                            <h5 class="text-center">Pour conclure</h4>
-                            <p>Au moment où j’écris ces mots l’année scolaire de ma 2e année de BUT SD se conclue et j’en tire beaucoup de positif. Du positif au sens propre tant les autres élèves et le corps enseignant ont été d’une bienveillance incroyable et m’ont aidé à traverser les épreuves. Mais également beaucoup de positif pour le développement de mes compétences, car <strong>chacune des compétences acquises est pour moi une petite victoire que je n’aurais pas cru possible il y a un an.</strong> </p>
-                            <p>Bien sûr, il y a eu des moments de doutes, des moments où je me demandais si j’avais encore l’âge de passer mes soirs et mes week-ends à travailler sur des projets scolaires, mais le travail apporte aussi son lot de satisfactions et je peux dire que cette année scolaire est une réussite. Je suis assez fier de mon parcours et fier d’appartenir à cette formation incroyable. J’ai hâte de découvrir mes petites victoires de l’année prochaine !</p>
-                            
-                        </div>
-                    </div>
+                    <p>Dans les <strong>enseignements transverses</strong>, l'objectif est de nous transmettre des clés supplémentaires qui nous seront utiles dans notre parcours professionnel. </p>
+                      <p>  Grâce aux enseignements transverses de cette année je suis en mesure de : <br>
+                        <i class="bi bi-arrow-right-square-fill"></i>	Mieux m'exprimer à l'oral et à l'écrit, en français et en anglais <br>
+                        <i class="bi bi-arrow-right-square-fill"></i>	Mieux comprendre les données économiques et sociales <br>
+                        <i class="bi bi-arrow-right-square-fill"></i>	Construire un outil sans contrevenir au cadre réglementaire du RGPD <br>
+                        </p>
+                    <p></p>
+
+                    
+                    <h5 class="text-center">Pour conclure</h4>
+                    <p>Au moment où j'écris ces mots l'année scolaire de ma 2e année de BUT SD se conclue et j'en tire beaucoup de positif. Du positif au sens propre tant les autres élèves et le corps enseignant ont été d'une bienveillance incroyable et m'ont aidé à traverser les épreuves. Mais également beaucoup de positif pour le développement de mes compétences, car <strong>chacune des compétences acquises est pour moi une petite victoire que je n'aurais pas cru possible il y a un an.</strong> </p>
+                    <p>Bien sûr, il y a eu des moments de doutes, des moments où je me demandais si j'avais encore l'âge de passer mes soirs et mes week-ends à travailler sur des projets scolaires, mais le travail apporte aussi son lot de satisfactions et je peux dire que cette année scolaire est une réussite. Je suis assez fier de mon parcours et fier d'appartenir à cette formation incroyable. J'ai hâte de découvrir mes petites victoires de l'année prochaine !</p>
+                    
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
 
-        </main>
+    <!-- le contenu du bilan BUT3: -->
+<div id="bilan-content-but3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="text-align: justify;">
+                <p>Arrivé au terme de ce BUT Sciences des Données, je ressens une immense satisfaction face au chemin parcouru. Cette troisième année a marqué l'aboutissement d'une transformation professionnelle que je n'aurais pas osé imaginer il y a deux ans. Si l'année précédente était celle de l'apprentissage et de la découverte, cette dernière année a été celle de la consolidation et de l'expertise.</p>
+                
+                <p>Cette année de BUT3 a été particulièrement riche en défis techniques et en projets ambitieux. Entre les technologies NoSQL, les architectures de chatbots LLM, et les problématiques de Big Data, j'ai pu mesurer à quel point mes compétences s'étaient solidifiées. L'équilibre entre alternance chez Covéa et formation s'est naturellement trouvé, permettant une synergie parfaite entre théorie et pratique.</p>
+                
+                <p>Le parcours "Visualisation et conception d'outils décisionnels" (VCOD) s'est révélé parfaitement aligné avec mes aspirations professionnelles. J'ai pu approfondir des domaines de pointe tout en développant une vision globale du métier de data analyst, de la collecte des données jusqu'à leur valorisation stratégique.</p>
+                
+                <p>Aujourd'hui, je ne me contente plus d'apprendre : je maîtrise, j'applique et je crée. Cette évolution représente pour moi l'accomplissement d'une reconversion professionnelle pleinement réussie.</p>
+                
+                <p></p>
+                <h5 class="text-center">Compétences acquises sur l'ensemble du parcours</h5>
+                <p></p>
+                
+                <p>En <strong>informatique</strong>, je dispose désormais d'un éventail technologique complet qui me rend opérationnel sur l'ensemble du cycle de traitement de la donnée.</p>
+                <p>Mes compétences informatiques me permettent de : <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Maîtriser plusieurs langages de programmation statistique (<strong>Python, R, SAS, VBA, SQL</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Concevoir et administrer des environnements de données complexes (<strong>Talend, Docker, Git, GitHub, Oracle, MySQL, MongoDB, ELK</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Créer des visualisations et des outils décisionnels performants (<strong>PowerBI, Qlik, Tableau, BO, QGIS, R Shiny, Dash, Streamlit, D3JS</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Développer des modèles de machine learning avec des bibliothèques spécialisées (<strong>pandas, numpy, matplotlib, seaborn, scikit-learn, statsmodels, tensorflow, keras, pytorch, Spark ML</strong>)
+                </p>
+
+                <p>En <strong>mathématiques et statistiques</strong>, j'ai acquis une solide expertise dans l'analyse de données et la modélisation prédictive.</p>
+                <p>Mes compétences mathématiques me permettent de : <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Réaliser des analyses descriptives approfondies (<strong>statistiques descriptives, distributions, corrélations, analyses de tendances</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Conduire des analyses multivariées complexes (<strong>ACP, clustering K-means, CAH, ...</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Développer des modèles de classification et régression supervisés et non supervisés (<strong>réseaux de neurones, random forest, régression logistique</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Construire des prévisions temporelles et évaluer la performance des modèles 
+                </p>
+                
+                <p><strong>Grâce à ces connaissances, je suis en mesure de réaliser des analyses aussi bien pour décrire des données existantes et aider à la prise de décision que pour modéliser l'information et traduire les données en projections stratégiques.</strong></p>
+
+                <p>Dans les <strong>compétences transverses</strong>, j'ai développé une posture professionnelle mature et une vision éthique du métier.</p>
+                <p>Mes compétences transverses me permettent de : <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Communiquer efficacement mes analyses à l'oral et à l'écrit, en français et en anglais <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Comprendre les enjeux économiques et sociaux pour donner du sens à mes analyses <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Intégrer les contraintes réglementaires et éthiques dans mes projets (<strong>RGPD, éthique de la donnée</strong>) <br>
+                    <i class="bi bi-arrow-right-square-fill"></i> Gérer des projets data en mode collaboratif et en respectant les bonnes pratiques de développement (<strong>méthode Agile, GitHub</strong>) <br>
+                </p>
+                <p></p>
+
+                <h5 class="text-center">L'alternance : accélérateur de professionnalisation</h5>
+                <p>Mon alternance chez Covéa a joué un rôle déterminant dans ma montée en compétences. J'ai eu l'opportunité de travailler sur des projets métier concrets, manipulant de véritables volumes de données et répondant à des enjeux business réels. Cette immersion professionnelle m'a permis de comprendre les attentes du terrain et d'adapter mes compétences techniques aux besoins opérationnels.</p>
+                <p>Cette expérience m'a également appris à naviguer dans l'écosystème complexe d'une grande entreprise, à collaborer avec des équipes pluridisciplinaires et à présenter mes analyses à des décideurs. Je mesure aujourd'hui à quel point cette dimension est essentielle dans le métier de data analyst.</p>
+                
+                <h5 class="text-center">Un parcours de transformation personnelle</h5>
+                <p>Au-delà des compétences techniques, ces deux années ont représenté une véritable transformation personnelle. 
+                    À 34 ans, j'ai dû réapprendre à apprendre, accepter de redevenir étudiant après avoir été encadrant, et surmonter le défi que représentaient pour moi les mathématiques (mes derniers cours remontaient à la terminale scientifique) ! 
+                    Il y a eu des moments de doutes, des soirs où je me demandais si j'avais encore l'âge de passer mes week-ends sur des projets scolaires. 
+                    Mais chaque nouvelle compétence acquise me prouve aujourd'hui que cela en valait la peine. 
+                    Cette capacité à me remettre en question, à sortir de ma zone de confort et à persévérer face aux difficultés, je la considère aujourd'hui comme l'un des acquis les plus précieux de cette formation. 
+                    Elle me donne confiance en ma capacité à continuer à évoluer dans un domaine en perpétuelle mutation.</p>
+                
+
+                <h5 class="text-center">Pour conclure</h5>
+                <p>Au terme de ces deux années de BUT, je ne peux que constater l'ampleur de la transformation accomplie. Je suis entré dans cette formation avec une expérience professionnelle solide mais des compétences techniques limitées. Aujourd'hui, je me sens pleinement légitime et opérationnel dans mon nouveau rôle de data analyst.</p>
+                
+                <p><strong>Ma reconversion professionnelle est une réussite pleine et entière.</strong> Je suis désormais capable de concevoir et développer des solutions d'analyse de données complètes, de gérer l'intégralité du cycle de vie d'un projet data, et de traduire des problématiques métier en solutions techniques performantes.</p>
+                
+                <p>Ce parcours m'a aussi permis de prendre du recul face à la complexité du domaine et de réaliser l'importance de l'apprentissage continu. Le monde de la data science évolue rapidement, et je sais que ma formation ne fait que commencer. Mais j'aborde cette perspective avec confiance et enthousiasme, fort des bases solides acquises pendant ces deux années.</p>
+                
+                <p>L'année dernière, j'écrivais que j'avais "hâte de découvrir mes petites victoires de l'année prochaine". Aujourd'hui, je peux dire que ces victoires ont largement dépassé mes espérances. Je regarde vers l'avenir professionnel avec la certitude d'avoir trouvé ma voie et d'être prêt à contribuer efficacement aux défis "data" de demain.</p>
+                
+                <p>Je tiens à exprimer ma profonde reconnaissance envers <strong>l'équipe pédagogique du BUT Sciences des Données</strong> pour l'excellence de la formation et la qualité de l'accompagnement, <strong>mes camarades de promotion</strong> pour leur solidarité, <strong>Raphaël GEGOUE</strong>, mon manager chez Covéa, pour m'avoir donné ma chance et offert un cadre d'apprentissage enrichissant et enfin <strong>Cédric FALGAT</strong>, mon tuteur chez Covéa, qui a su m'accompagner, me soutenir et me faire grandir pendant ces deux années. Cette aventure collective restera l'une des expériences les plus marquantes de ma vie professionnelle.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
 
 
 <!-- ------------------------------------------------ -->
@@ -832,7 +1345,7 @@
                     <div class="site-footer-bottom mt-5">
                         <div class="row pt-4">
                             <div class="col-lg-8 col-12">
-                                <p class="copyright-text tooplate-link">Copyright © 2024 Thibault DAGUIN   -   <a href="mailto:daguint@gmail.com" class="footer-link">daguint@gmail.com</a> / <a href="tel:+33675180659" class="footer-link">06 75 18 06 59</a>
+                                <p class="copyright-text tooplate-link">Copyright © 2025 Thibault DAGUIN   -   <a href="mailto:daguint@gmail.com" class="footer-link">daguint@gmail.com</a> / <a href="tel:+33675180659" class="footer-link">06 75 18 06 59</a>
                                 <br>Site web réalisé avec les langages 
                                     <a class="footer-link" href="https://www.w3schools.com/html/" target="_blank">HTML</a>
                                     , 
@@ -865,6 +1378,103 @@
         <script src="js/jquery.backstretch.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+
+
+<!-- Script JavaScript pour gérer le texte en gras -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const bilanToggle = document.getElementById('bilanToggle');
+                const toggleBut2 = document.getElementById('toggle-but2');
+                const toggleBut3 = document.getElementById('toggle-but3');
+                const bilanTitleBut2 = document.getElementById('bilan-title-but2');
+                const bilanTitleBut3 = document.getElementById('bilan-title-but3');
+                const bilanContentBut2 = document.getElementById('bilan-content-but2');
+                const bilanContentBut3 = document.getElementById('bilan-content-but3');
+                
+                // État initial (BUT3 actif par défaut)
+                updateVisibility(true);
+                
+                // Gestion du toggle pour le bilan
+                bilanToggle.addEventListener('change', function() {
+                    updateVisibility(this.checked);
+                });
+                
+                // Fonction pour mettre à jour la visibilité et le style
+                function updateVisibility(showBUT3) {
+                    if (showBUT3) {
+                        // Afficher le contenu BUT3
+                        bilanTitleBut2.style.display = 'none';
+                        bilanTitleBut3.style.display = 'block';
+                        bilanContentBut2.style.display = 'none';
+                        bilanContentBut3.style.display = 'block';
+                        
+                        // Mise en gras du texte BUT3
+                        toggleBut3.classList.add('active');
+                        toggleBut2.classList.remove('active');
+                    } else {
+                        // Afficher le contenu BUT2
+                        bilanTitleBut2.style.display = 'block';
+                        bilanTitleBut3.style.display = 'none';
+                        bilanContentBut2.style.display = 'block';
+                        bilanContentBut3.style.display = 'none';
+                        
+                        // Mise en gras du texte BUT2
+                        toggleBut2.classList.add('active');
+                        toggleBut3.classList.remove('active');
+                    }
+                }
+            });
+            </script>
+
+<!-- Script JavaScript pour gérer le toggle des projets -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const projetsToggle = document.getElementById('projetsToggle');
+        const toggleProjetsBut2 = document.getElementById('toggle-projets-but2');
+        const toggleProjetsBut3 = document.getElementById('toggle-projets-but3');
+        const projetsContentBut2 = document.getElementById('projets-content-but2');
+        const projetsContentBut3 = document.getElementById('projets-content-but3');
+        
+        // S'assurer que la case à cocher du toggle est cochée (pour BUT3)
+        projetsToggle.checked = true;
+        
+        // S'assurer que les classes active sont correctement appliquées
+        toggleProjetsBut3.classList.add('active');
+        toggleProjetsBut2.classList.remove('active');
+        
+        // S'assurer que le contenu correct est affiché
+        projetsContentBut2.style.display = 'none';
+        projetsContentBut3.style.display = 'block';
+        
+        // Gestion du toggle pour les projets
+        projetsToggle.addEventListener('change', function() {
+            updateVisibility(this.checked);
+        });
+        
+        // Fonction pour mettre à jour la visibilité et le style
+        function updateVisibility(showBUT3) {
+            if (showBUT3) {
+                // Afficher le contenu BUT3
+                projetsContentBut2.style.display = 'none';
+                projetsContentBut3.style.display = 'block';
+                
+                // Mise en gras du texte BUT3
+                toggleProjetsBut3.classList.add('active');
+                toggleProjetsBut2.classList.remove('active');
+            } else {
+                // Afficher le contenu BUT2
+                projetsContentBut2.style.display = 'block';
+                projetsContentBut3.style.display = 'none';
+                
+                // Mise en gras du texte BUT2
+                toggleProjetsBut2.classList.add('active');
+                toggleProjetsBut3.classList.remove('active');
+            }
+        }
+    });
+    </script>
+
+
 
     </body>
 </html>
