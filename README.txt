@@ -1,4 +1,4 @@
-Réalisé par Thibault DAGUIN - BUT SD2
+Réalisé par Thibault DAGUIN - BUT SD3
 
 Code HTML dans index.html
 
